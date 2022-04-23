@@ -10,3 +10,6 @@ jobs:
       - run: flutter -v build apk
       - store_artifacts:
           path: build/app/outputs/flutter-apk/app-release.apk
+      - run: flutter -v build ios
+      - store_artifacts:
+          path: build/app/outputs/flutter-ios/app-release.ipa     
